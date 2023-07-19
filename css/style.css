@@ -412,6 +412,8 @@ nav {
   }
   .game-list-container {
     grid-template-columns: repeat(3, 1fr);
+    margin: 30px 0px;
+    width: 95%;
   }
   .footer-title {
     gap: 1px;
