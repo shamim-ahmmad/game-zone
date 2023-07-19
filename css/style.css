@@ -119,6 +119,7 @@ nav {
   color: #534c64;
   font-size: 1rempx;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .fa-circle-play,
 .fa-arrow-down,
@@ -126,7 +127,21 @@ nav {
   font-size: 1rem;
   padding-right: 5px;
 }
-
+.banner-btn1 {
+  background: #ff42a5;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+}
+.banner-btn2 {
+  border-radius: 48px;
+  background: #4ec5f7;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 40px;
+  border: none;
+}
 /* header section end .. */
 
 /* main start here  */
