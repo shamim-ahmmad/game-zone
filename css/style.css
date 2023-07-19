@@ -125,6 +125,7 @@ nav {
   font-size: 1rem;
   padding-right: 5px;
 }
+
 /* header section end .. */
 
 /* main start here  */
@@ -147,6 +148,7 @@ nav {
 .games-content {
   width: 50%;
 }
+/* shared games-container and play-container  */
 .games-title {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
@@ -191,11 +193,145 @@ nav {
 }
 /* games end .. */
 
+/* funny-video-container start here  */
+.funny-video-container {
+  width: 100%;
+  margin: 40px auto;
+}
+.funny-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 80%;
+  margin: 10px auto;
+}
+.funny-item {
+  width: 30%;
+  background: #eff2f3;
+  box-shadow: 6px 4px 3px gray;
+  position: relative;
+}
+.funny-item:hover {
+  background-color: #f948b2;
+  color: #f948b2;
+}
+.funny-item img {
+  width: 100%;
+}
+.item-title {
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.video-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+#funny-color {
+  color: #8758f1;
+}
+.video-description {
+  color: #534c64;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.watch-now {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  color: #fa0adad5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  align-items: center;
+}
+.fa-circle-play {
+  color: #f2eef3;
+  font-size: 2rem;
+}
+/* funny end .. */
+
+/* play contaier start here  */
+.play-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 120px auto;
+  border: 1px solid red;
+}
+.play-content {
+  width: 40%;
+  border: 1px solid red;
+  text-align: center;
+}
+.anniversery-img {
+  width: 50%;
+  border: 1px solid red;
+  position: relative;
+}
+.anniversery-img img {
+  width: 100%;
+}
+.play-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.play-description {
+  color: #534c64;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.anniversery-body img {
+  width: 200px;
+  height: 150px;
+}
+.anniversery-body {
+  position: absolute;
+  bottom: -50px;
+  left: -60px;
+}
+/* play end .. */
+
+/* game-list-container start here  */
+.list-item {
+  display: flex;
+  gap: 10px;
+}
+.game-list-container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.item-title {
+  font-size: 1rem;
+}
+.list-item .list-item16 {
+  margin-left: 20px;
+}
+/* game-list end .. */
+
 /* responsive media query for mobile large  */
 @media screen and (max-width: 425px) {
   .nav-container,
   .nav-list,
-  .games-container {
+  .games-container,
+  .funny-items,
+  .play-container {
     flex-direction: column;
   }
   .nav-container {
@@ -208,8 +344,14 @@ nav {
   .banner-content,
   .banner-img,
   .games-img,
-  .games-content {
+  .games-content,
+  .funny-video-container,
+  .funny-item,
+  .anniversery-img {
     width: 100%;
+  }
+  .play-content {
+    width: 85%;
   }
   .color-title,
   .banner-title,
