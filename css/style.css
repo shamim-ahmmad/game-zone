@@ -268,7 +268,7 @@ nav {
   align-items: center;
 }
 .fa-circle-play {
-  color: #1a191a;
+  color: #f0e6f0;
   font-size: 1.6rem;
 }
 /* funny end .. */
@@ -318,6 +318,7 @@ nav {
 
 /* game-list-container start here  */
 .list-item {
+  color: #0b0223;
   display: flex;
   font-size: 0.8rem;
 }
@@ -331,6 +332,16 @@ nav {
 
 .item-title {
   font-size: 1rem;
+  border-radius: 20px;
+  background: #cfc7c7;
+  color: #0b0223;
+  padding-right: 5px;
+  text-align: center;
+}
+.item-title:hover {
+  border-radius: 50px;
+  background: #ac2f2f;
+  color: red;
 }
 .list-item .list-item16 {
   margin-left: 20px;
